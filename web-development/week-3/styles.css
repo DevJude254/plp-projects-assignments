@@ -1,0 +1,71 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header styling */
+.site-header {
+  background: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid #357ab7;
+}
+
+/* Navigation bar */
+.navbar {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #4a90e2;
+}
+
+/* Card sections to show the Box Model */
+.card {
+  background: white;
+  margin: 20px;       /* space OUTSIDE the box */
+  padding: 15px;      /* space INSIDE between text and border */
+  border: 2px solid #ccc; /* border around the padding */
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+.styled-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.styled-btn:hover {
+  background: #357ab7;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: #eee;
+  margin-top: 20px;
+}
