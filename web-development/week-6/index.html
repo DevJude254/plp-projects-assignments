@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Interactive Page</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Interactive Feature 1: Image Gallery -->
+        <section class="gallery-container">
+            <h2>Simple Image Gallery</h2>
+            <img src="assets/sample.jpeg" alt="Gallery Image" id="galleryImage">
+            <div class="gallery-controls">
+                <button id="prevBtn">&laquo; Previous</button>
+                <button id="nextBtn">Next &raquo;</button>
+            </div>
+        </section>
+
+        <!-- Interactive Feature 2: Contact Form with Custom Validation -->
+        <section class="form-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                <button type="submit">Submit</button>
+                <div id="formSuccess" class="success-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
